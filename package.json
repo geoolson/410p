@@ -1,0 +1,14 @@
+{
+  "name": "410p",
+  "version": "1.0.0",
+  "description": "finds the minimum bounding box of a set of 2d points",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "monotone-convex-hull-2d": "^1.0.1"
+  }
+}
