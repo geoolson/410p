@@ -21,7 +21,7 @@ function GetAllAntiPodalPairs(points)
   let i0 = points.length - 1;
   let i = 0;
   let j = 1;
-  while(area(i,i+1,j+1) > area(i,i+1,j))
+  while((j < i0) && area(i,i+1,j+1) > area(i,i+1,j))
   {
     ++j;
   }
@@ -49,7 +49,7 @@ function GetAllAntiPodalPairs(points)
   return pairs;
 }
 
-var seed = 221881;
+var seed = 22188;
 function randPoints(){
   function random() {
     let x = Math.sin(seed++) * 10000;
